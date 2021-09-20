@@ -4,6 +4,7 @@ This repository is meant to provide an example framework for Ansible automation.
 | Playbook Name     	| Usage                                                            	|
 |-------------------	|------------------------------------------------------------------	|
 | app_deploy        	| Deploy or update a non-GSLB application                          	|
+| app_deploy_all_sites| Deploy applications for each site defined in playbook vars        |
 | site_deploy       	| Deploy or update an Avi controller cluster                       	|
 | gslb_infra_deploy 	| Deploy or update GSLB leader, including adding sites to topology 	|
 | gslb_app_deploy   	| Deploy or update a GSLB application                              	|
