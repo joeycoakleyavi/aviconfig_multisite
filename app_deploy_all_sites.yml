@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - role: avinetworks.aviconfig
+  vars:
+    sites:
+      - us-east-1
+      - us-west-2
+
+  tasks:
+    - name: Deploy Apps in all sites
+      include_tasks: app_deploy_tasks.yml
+      loop: "{{ sites }}"
+      loop_control:
+        loop_var: site

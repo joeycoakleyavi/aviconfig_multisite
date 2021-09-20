@@ -1,0 +1,5 @@
+avi_credentials:
+  controller: SCRUBBED
+  username: admin
+  password: SCRUBBED
+  api_version: 21.1.1

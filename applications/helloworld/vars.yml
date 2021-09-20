@@ -1,0 +1,2 @@
+app_fqdn: "{{ (site + '-') | default(omit) }}helloworld.joeycoakley.com"
+app_profile: System-L4-Application
