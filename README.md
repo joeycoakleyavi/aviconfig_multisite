@@ -45,6 +45,7 @@ git clone https://github.com/joeycoakleyavi/aviconfig_multisite.git
 cd aviconfig_multisite
 python3 -m venv env
 source env/bin/activate
+pip3 install pip --upgrade
 pip3 install -r requirements.txt
 ansible-galaxy install avinetworks.avisdk
 ansible-galaxy install avinetworks.aviconfig
