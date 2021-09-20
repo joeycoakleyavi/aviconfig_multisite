@@ -1,8 +1,6 @@
 ---
 - hosts: localhost
   connection: local
-  collections:
-    - vmware.alb
   roles:
     - role: avinetworks.avisdk
   vars_files:
@@ -42,7 +40,7 @@
 
     - name: Deploy GSLB on Leader Node
       import_role:
-        name: aviconfig
+        name: avinetworks.aviconfig
       vars:
         avi_config_file: "{{ root_directory }}/gslb/infrastructure/config.yml"
         avi_creds_file: "{{ root_directory }}/sites/{{ leader_site }}/creds.yml"

@@ -7,7 +7,7 @@
 
 - name: Avi Application | Setup {{ app_name }}
   import_role:
-    name: aviconfig
+    name: avinetworks.aviconfig
   vars:
     avi_config_file: "{{ root_directory }}/gslb/applications/{{ app_name }}/config.yml"
     avi_creds_file: "{{ root_directory }}/sites/{{ leader_site }}/creds.yml"
